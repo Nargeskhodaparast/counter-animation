@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #94716b;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.counter {
+    background: #b79891;
+    box-shadow: 0 6px 5px #86605a;
+    width: 100px;
+    text-align: center;
+    padding: 20px 15px;
+    color: #fff;
+}
+
+.counter .fa {
+    font-size: 32px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter animation</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="counter">
+    <i class="fa fa-eye" aria-hidden="true"></i>
+    <h1 class="count" id="number">500</h1>
+    <p class="display">views</p>
+</div>
+<script>
+    const numbers = document.getElementById("number");
+    let temp = 0;
+    setInterval(() => {
+        if (temp < 500) {
+            temp = temp + 1;
+            numbers.innerText = temp;
+        }
+    }, 0, 100)
+</script>
+</body>
+</html>
